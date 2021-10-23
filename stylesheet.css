@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* header with name */
+  .header {
+    background-color: #92B4A7;
+    padding: 20px;
+    text-align: center;
+    font-size: 35px;
+    margin-left: 0.8%;
+    margin-right: 0.8%;
+  }
+
+  /* picture size for face image */
+  img {
+    height: 500px;
+    width: 375px;
+  }
+  
+  /* create three columns of equal size */
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+  }
+
+  /* project button that controls the project content */
+  .column .projButton {
+    align-self: center;
+    margin-top:20%;
+    margin-left: 30%;
+    text-align: center;
+    width:30%;
+    padding:10px;
+    border:none;
+    outline:none;
+    background:#A3320B;
+    color:#f5f5f5;
+    font-size:16px;
+    font-weight: bold;
+    cursor:pointer;
+    border-radius:5px;
+  }
+
+  /* connect button that controls the connect content */
+  .column .cnctButton {
+    align-self: center;
+    margin-top:20%;
+    margin-left: 30%;
+    text-align: center;
+    width:30%;
+    padding:10px;
+    border:none;
+    outline:none;
+    background:#6B0504;
+    color:#f5f5f5;
+    font-size:16px;
+    font-weight: bold;
+    cursor:pointer;
+    border-radius:5px;
+  }
+
+  /* about button that controls the about content */
+  .column .abtButton {
+    align-self: center;
+    margin-top:20%;
+    margin-left: 30%;
+    text-align: center;
+    width:30%;
+    padding:10px;
+    border:none;
+    outline:none;
+    background:#E6AF2E;
+    color:#f5f5f5;
+    font-size:16px;
+    font-weight: bold;
+    cursor:pointer;
+    border-radius:5px;
+  }
+
+  /* initially don't show project content and then do it */
+  .projText {
+    font-size: 20px;
+  }
+
+  .projMoreText {
+    display: none;
+  }
+
+  .show-proj .projMoreText {
+  display: inline;
+  }
+
+  /* initially don't show about me content and then show it */
+  .abtText {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .abtMoreText {
+    display: none;
+  }
+
+  .show-abt .abtMoreText {
+  display: inline;
+  }
+
+  /* initially don't show connect content and then show it */
+  .cnctText {
+    font-size: 20px;
+  }
+
+  .cnctMoreText {
+    display: none;
+  }
+
+  .show-cnct .cnctMoreText {
+  display: inline;
+  }
+
+
+ 

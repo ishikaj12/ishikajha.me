@@ -1,0 +1,30 @@
+const showProjButton = document.querySelector(".projButton");
+const ptext = document.querySelector(".projText");
+const showAbtButton = document.querySelector(".abtButton");
+const atext = document.querySelector(".abtText");
+const showCnctButton = document.querySelector(".cnctButton");
+const ctext = document.querySelector(".cnctText");
+
+// when project button is clicked, show or hide project content depend on if it was previously clicked
+// also make sure connect and about content doesn't show
+showProjButton.addEventListener("click", (e) => {
+    ptext.classList.toggle("show-proj");
+    atext.classList.remove("show-abt")
+    ctext.classList.remove("show-cnct")
+});
+
+// when about button is clicked, show or hide about content depend on if it was previously clicked
+// also make sure connect and project content doesn't show
+showAbtButton.addEventListener("click", (e) => {
+    atext.classList.toggle("show-abt");
+    ptext.classList.remove("show-proj");
+    ctext.classList.remove("show-cnct")
+});
+
+// when connect button is clicked, show or hide connect content depend on if it was previously clicked
+// also make sure project and about content doesn't show
+showCnctButton.addEventListener("click", (e) => {
+    ctext.classList.toggle("show-cnct");
+    atext.classList.remove("show-abt")
+    ptext.classList.remove("show-proj");
+});
